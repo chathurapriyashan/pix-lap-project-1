@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html {
+  font-size: 62.5%;
+  /* 10px */ }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth; }
+
+body {
+  height: 100vh;
+  background: #fcf9f9; }
+
+a {
+  text-decoration: none;
+  color: #6a6868;
+  font-size: 2rem; }
+  a:hover {
+    color: #3c4b79; }
+
+.ul li:nth-child(1) {
+  background-color: #0a0000; }
+
+.ul li:nth-child(2) {
+  background-color: #140000; }
+
+.ul li:nth-child(3) {
+  background-color: #1e0000; }
+
+.ul li:nth-child(4) {
+  background-color: #280000; }
+
+.ul li:nth-child(5) {
+  background-color: #320000; }
+
+.ul li:nth-child(6) {
+  background-color: #3c0000; }
+
+.ul li:nth-child(7) {
+  background-color: #460000; }
+
+.ul li:nth-child(8) {
+  background-color: #500000; }
+
+.ul li:nth-child(9) {
+  background-color: #5a0000; }
+
+.ul li:nth-child(10) {
+  background-color: #640000; }
+
+li {
+  list-style: none; }
+
+.navbar {
+  max-width: 114rem;
+  height: 10rem;
+  margin: 2rem auto;
+  max-width: 114rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 15.0rem;
+  width: 100%; }
+  .navbar .logo a {
+    font-size: 2rem;
+    font-weight: bold; }
+  .navbar .links {
+    display: flex;
+    gap: 2rem; }
+    @media screen and (max-width: 922px) {
+      .navbar .links {
+        display: none; } }
+  .navbar .toggle_btn {
+    color: #6a6868;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; }
+    @media screen and (max-width: 922px) {
+      .navbar .toggle_btn {
+        display: block; } }
+
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 6.0rem;
+  height: 0;
+  width: 30.0rem;
+  background: rgba(71, 15, 213, 0.1);
+  border-radius: 1.0rem;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  .dropdown_menu .open {
+    height: 24.0rem; }
+  .dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  @media screen and (max-width: 992px) {
+    .dropdown_menu {
+      display: block; } }
+  @media screen and (max-width: 576px) {
+    .dropdown_menu {
+      left: 2rem;
+      width: unset; } }
+
+.action_btn {
+  background-color: #6e90f7;
+  color: #f8f4f4;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 2.0rem;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-shadow: #0587de; }
+  .action_btn:hover {
+    scale: 1.05;
+    color: #283f88; }
+  .action_btn:active {
+    scale: 0.95; }
+  @media screen and (max-width: 922px) {
+    .action_btn {
+      display: none; } }
+
+.main_btn {
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 100px;
+  background-color: #655ec4;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 1.6rem;
+  border: 0;
+  user-select: none;
+  margin: 0 auto;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  width: max-content;
+  transition: all .3s ease; }
+  .main_btn:hover {
+    scale: 1.05;
+    box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2);
+    color: white; }
+  .main_btn:active {
+    scale: 0.95; }
+  .main_btn .main_btn_2 {
+    background-color: #969292;
+    border: #383737;
+    scale: 0.95;
+    border-color: #383737;
+    color: #383737;
+    font-size: 2rem;
+    font-weight: bolder;
+    cursor: pointer;
+    text-shadow: #383737;
+    position: relative;
+    top: 50rem;
+    left: 67rem; }
+    .main_btn .main_btn_2:hover {
+      scale: 1.05;
+      color: #41f70f; }
+
+.copyright {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  padding: 3rem 1rem;
+  font-size: 1.4rem;
+  background-color: #333232; }
+
+svg {
+  font-family: Fraunces;
+  width: 80vw;
+  margin: 0 auto; }
+
+svg text {
+  text-transform: uppercase;
+  animation: stroke 5s infinite alternate;
+  stroke-width: 2;
+  stroke: #365fa0;
+  font-size: 900%;
+  width: 100%; }
+
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: #365fa0;
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2; }
+  70% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: #365fa0; }
+  80% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: #365fa0;
+    stroke-width: 3; }
+  100% {
+    fill: #488acc;
+    stroke: rgba(54, 95, 160, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0; } }
+
+header {
+  position: relative;
+  padding: 0 2rem;
+  max-width: 114rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto; }
+
+section {
+  position: relative;
+  margin-top: 15rem; }
+
+.para {
+  margin: 25rem auto;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 114rem; }
+  .para .box {
+    display: flex;
+    width: 100%;
+    margin-bottom: 5rem; }
+    .para .box .content {
+      width: 60%; }
+      .para .box .content h1 {
+        font-size: 40px;
+        text-align: left;
+        text-transform: capitalize;
+        color: #474040;
+        margin-bottom: 5rem; }
+      .para .box .content p {
+        width: 100%;
+        text-wrap: wrap;
+        font-size: 1.8rem;
+        color: #474040; }
+    .para .box img {
+      width: 40%;
+      height: 100%;
+      object-fit: cover; }
+    .para .box:nth-child(2) {
+      justify-content: center; }
+      .para .box:nth-child(2) .content {
+        width: 80%; }
+
+.service {
+  margin-top: 20rem;
+  display: flex;
+  flex-direction: column; }
+  .service .heading {
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #474040;
+    margin-bottom: 5rem; }
+  .service_container {
+    max-width: 100rem;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    margin: 0 auto; }
+    .service_container .service_box {
+      width: 29%;
+      text-align: center;
+      padding: 20px;
+      min-width: 25rem;
+      background-color: #38395c;
+      border-radius: 10px;
+      transition: .4s ease;
+      border: transparent solid 3px; }
+      .service_container .service_box:hover {
+        transform: scale(1.1);
+        border: #0ef solid 3px; }
+      .service_container .service_box i {
+        font-size: 35px;
+        color: #0ef;
+        text-shadow: 0 0 10px #0ef; }
+      .service_container .service_box h3 {
+        font-size: 25px;
+        color: #fff;
+        text-transform: capitalize;
+        font-weight: 700;
+        margin: 10px 0;
+        position: relative;
+        left: auto;
+        top: auto; }
+      .service_container .service_box p {
+        color: #eee;
+        font-size: 17px;
+        font-style: italic;
+        margin-bottom: 15px; }
+      .service_container .service_box .btn {
+        display: inline-block;
+        padding: 8px 30px;
+        font-size: 22px;
+        text-transform: capitalize;
+        color: #23244a;
+        background-color: #0ef;
+        border-radius: 20px;
+        font-weight: 500;
+        transition: .3s ease; }
+        .service_container .service_box .btn:hover {
+          box-shadow: 0 0 10px #0ef; }
+
+.product {
+  background-color: #38395c; }
+
+h1 {
+  font-size: 10.0rem;
+  width: 100%;
+  top: 25%;
+  text-align: center;
+  color: #6a6868;
+  font-family: Fraunces; }
+
+h2 {
+  font-size: 8rem;
+  color: #6a6868;
+  width: 100%;
+  top: 38%;
+  text-align: center;
+  font-family: Fraunces; }
+
+h3 {
+  font-size: 6.0rem;
+  left: 15.0rem;
+  color: #fff;
+  top: 4.5rem;
+  font-family: Fraunces; }

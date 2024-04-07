@@ -1,0 +1,39 @@
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 6.0rem;
+    height: 0;
+    width: 30.0rem;
+    background: rgba(71, 15, 213, 0.1);
+    border-radius: 1.0rem;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    .open {
+        height: 24.0rem;
+    }
+
+    li {
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .action_btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    @include media(992px){
+        display: block;
+    }
+
+    @include media(576px){
+        left: 2rem;
+        width: unset;
+    }
+
+}

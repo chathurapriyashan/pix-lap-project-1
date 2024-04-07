@@ -1,0 +1,91 @@
+.service {
+   margin-top: 20rem;
+   display: flex;
+   flex-direction: column;
+
+   .heading{
+      font-size: 40px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #474040;
+      margin-bottom: 5rem;
+
+   }
+
+   &_container {
+      max-width: 100rem;
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+      margin: 0 auto;
+
+
+      .service_box {
+         width: 29%;
+         text-align: center;
+         padding: 20px;
+         min-width: 25rem;
+         background-color: #38395c;
+         border-radius: 10px;
+         transition: .4s ease;
+         border: transparent solid 3px;
+
+         &:hover {
+            transform: scale(1.1);
+            border: #0ef solid 3px;
+         }
+
+         i {
+            font-size: 35px;
+            color: #0ef;
+            text-shadow: 0 0 10px #0ef;
+         }
+
+         h3 {
+            font-size: 25px;
+            color: #fff;
+            text-transform: capitalize;
+            font-weight: 700;
+            margin: 10px 0;
+            position: relative;
+            left: auto;
+            top: auto;
+         }
+
+         p {
+            color: #eee;
+            font-size: 17px;
+            font-style: italic;
+            margin-bottom: 15px;
+         }
+
+         .btn {
+            display: inline-block;
+            padding: 8px 30px;
+            font-size: 22px;
+            text-transform: capitalize;
+            color: #23244a;
+            background-color: #0ef;
+            border-radius: 20px;
+            font-weight: 500;
+            transition: .3s ease;
+
+            &:hover {
+               box-shadow: 0 0 10px #0ef;
+            }
+         }
+         
+      }
+   }
+   
+   
+}
+
+
+.product {
+   background-color: #38395c;
+}

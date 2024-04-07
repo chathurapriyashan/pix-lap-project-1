@@ -1,0 +1,12 @@
+.ul {
+    @for $i from 1 through 10{
+        li:nth-child(#{$i}){
+            background-color: rgb($i * 10 ,0,0);
+        }
+    }
+}
+
+
+li {
+    list-style: none;
+}
